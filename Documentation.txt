@@ -1,0 +1,16 @@
+CS 210 Project Three: Grocery-Tracking Program
+
+Overview:
+This C++ program allows users to track grocery items purchased using a menu-driven interface. It reads data from a file and outputs both frequencies and histograms of item occurrences. The program utilizes a class (ItemTracker) with private and public sections and demonstrates industry standard best practices, including file I/O, encapsulation, and maps.
+
+Key Features:
+- Option 1: Search item frequency
+- Option 2: List all items with frequency
+- Option 3: Display histogram of items
+- Option 4: Exit the program
+
+Backup:
+Automatically creates a frequency.dat file containing item names and their frequencies.
+
+Author: [Your Name]
+Date: [Submission Date]
