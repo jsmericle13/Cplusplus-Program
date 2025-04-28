@@ -1,0 +1,12 @@
+DriverPass Project Portfolio Submission
+Project Summary
+The DriverPass project involved designing a system for a client offering driver's education services, including online coursework, practice tests, scheduling of driving tests, and instructor support. The client needed a complete system to allow students to register, access learning materials, book tests, and communicate with staff. Our goal was to gather the client’s requirements and translate them into a functional system design that would support both users and administrators.
+What I Did Well
+I believe I did a particularly good job clearly organizing the business requirements and identifying the major features the client needed. My business requirements document was detailed but easy to understand, ensuring that the client's needs were captured effectively. In the system design document, I created UML diagrams that clearly mapped out the system’s functionality, including user interactions and system workflows.
+What I Would Revise
+If I could revise one part of my work, I would improve the level of detail in the sequence diagrams. Although the diagrams correctly showed the general flow of information, adding more specific events, such as system error handling or alternate paths, would make the design more realistic and robust. In the future, I would include more detailed interactions to anticipate potential real-world issues.
+How I Interpreted and Implemented User Needs
+I carefully read through the business requirements and user stories provided, ensuring that each major user action (such as registering for a test or accessing coursework) was incorporated into the system design. I prioritized user needs by creating intuitive workflows and ensuring there were minimal steps for completing important actions. Considering user needs is critical because if the system is not user-friendly, users will become frustrated and may abandon the service altogether. A system should always prioritize ease of use and accessibility.
+My Approach to Designing Software
+When designing software, I first focus on understanding the end-user and their goals. I break down the requirements into core features and prioritize them based on user impact. I use diagrams like use case, activity, sequence, and class diagrams to map out how different parts of the system interact. In the future, I plan to apply techniques like user journey mapping and more detailed prototyping before finalizing designs to ensure that the system design is intuitive and complete.
+
