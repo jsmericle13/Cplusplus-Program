@@ -1,41 +1,16 @@
-Architecture
-Compare and contrast the types of frontend development you used (Express HTML, JavaScript, SPA).
-In this project I used Express to serve HTML pages for basic navigation and page structure. I used JavaScript on the client side to handle interactive behaviors like form submission, updating the UI, and making requests to the backend without reloading the page. I also used a single-page application (SPA) approach for parts of the site where it was better to dynamically load and update content. Express-rendered pages are simpler and easier to set up, while the SPA approach feels faster and smoother for users because it updates the page dynamically.
-Why did the backend use a NoSQL MongoDB database?
-MongoDB worked well because it stores data as flexible documents, which fits naturally with JavaScript/Node development. It also makes it easier to adjust the data structure as the project evolves. MongoDB integrates well with REST APIs because data can be sent and received as JSON.
-Functionality
-How is JSON different from JavaScript and how does JSON tie together the frontend and backend?
-JavaScript is a programming language used to write logic and behavior in the application. JSON is a data format used to store and transmit information. The backend sends JSON responses to the frontend, and the frontend sends JSON in requests back to the backend. This makes JSON the “bridge” that connects the frontend UI to the backend API.
-Instances where you refactored code and benefits of reusable UI components.
-During development I refactored code by reusing shared functions instead of repeating logic in multiple places (such as validation, formatting, and request handling). I also reorganized routes and controllers to keep the code easier to read and maintain. Reusable UI components help because they keep the interface consistent, reduce duplication, and make future changes faster since updates only need to be made once.
-Testing
-Methods, endpoints, and security in a full stack application.
-Endpoints are the routes the frontend calls to access backend functionality. Methods like GET, POST, PUT/PATCH, and DELETE define what action is performed on the data. Testing is important to confirm that each endpoint returns the correct status codes and data. Adding security makes testing more difficult because protected routes require authentication, meaning you must test both authorized and unauthorized requests to ensure the application blocks access correctly and only allows valid users to perform admin actions.
-Reflection
-How has this course helped you reach your professional goals and become more marketable?
-This course helped me understand the full stack development process from end to end, including frontend structure, backend APIs, database integration, and security. I improved my ability to debug issues across multiple layers of an application, build REST endpoints, and connect the UI to real data. I also learned how to implement secure admin authentication and why security must be planned early. These skills make me more marketable because employers expect developers to understand full stack workflows, API development, and security basics.
-
-
-CS 330 3D Scene Project – Portfolio Reflection
-How do I approach designing software?
-When I design software, I start by identifying the goal and breaking it into smaller requirements that I can implement and test one at a time. For this project, that meant planning the scene layout first (what objects I needed and how they would be arranged), then mapping each requirement to a milestone task (modeling, textures, lighting, camera/input, and final polish). I try to keep my design practical by choosing a clear scope, using modular code, and making decisions that keep the project maintainable as it grows.
-What new design skills has your work on the project helped you to craft?
-This project improved my ability to think in 3D space and design scenes intentionally. I learned how to use composition (object placement and scale) to make a scene feel balanced and visually interesting. I also learned how design choices connect to technical details—especially how scale, lighting, and material settings work together. Planning for camera movement and user navigation also helped me think about the “viewer experience,” not just the objects.
-What design process did you follow for your project work?
-I followed an iterative design process. I started with a basic plan, created a simple version of the scene, and then improved it milestone by milestone. Each week I added one major feature, tested it in the scene, and adjusted based on how it looked and behaved. I used feedback and debugging results to guide changes, especially when textures, lighting, or camera movement didn’t work as expected.
-How could tactics from your design approach be applied in future work?
-The biggest tactic I will reuse is building in small increments and validating each step before moving on. This reduces risk and makes debugging easier. I can apply the same approach to future software projects by defining requirements, building prototypes early, and refining based on testing and feedback.
-How do I approach developing programs?
-My development approach focuses on writing code in a way that is organized, readable, and easy to update. I break large problems into functions and reusable components and test often to catch issues early. For this project, that meant keeping object creation, texture setup, lighting configuration, and input handling separated so I could work on one part without breaking the rest.
-What new development strategies did you use while working on your 3D scene?
-A new strategy I used was thinking in terms of the graphics pipeline: defining geometry, applying transformations, binding textures/materials, configuring lights, and rendering consistently each frame. I also relied more heavily on debugging techniques like isolating one object/light at a time, adjusting values gradually, and using consistent naming/organization to track what was happening in the scene.
-How did iteration factor into your development?
-Iteration was essential. I rarely got a feature perfect on the first attempt—especially lighting and textures. I would implement a change, test it visually, then tweak values and rerun the program until the output matched what I intended. Each milestone built on the last, so I had to keep improving my code and scene incrementally rather than restarting.
-How has your approach to developing code evolved throughout the milestones?
-Early on, I focused mainly on getting objects to render correctly. As the milestones continued, my approach became more structured: I wrote cleaner code, reused patterns, improved organization, and became more careful about transformations and scene scale. By the end, I was thinking more like a developer working on a real project—planning changes, implementing them in smaller steps, and keeping the code maintainable.
-How can computer science help me in reaching my goals?
-Computer science helps me reach my goals by giving me problem-solving skills and a structured way to design, build, and improve software. This project strengthened my ability to work through complex systems, troubleshoot issues, and deliver a finished product. It also gave me a stronger portfolio artifact that demonstrates technical skill beyond basic programming.
-How do computational graphics and visualizations help in my future educational pathway?
-Computational graphics helped me develop stronger math and spatial reasoning skills, especially around transformations, coordinate systems, and camera movement. These skills apply to other computer science areas like simulation, data visualization, UI development, and performance optimization, and they support future learning in advanced programming or interactive application design.
-How do computational graphics and visualizations help in my future professional pathway?
-Professionally, these skills translate to roles involving visualization, interactive applications, simulation, game development, AR/VR concepts, and any software that needs strong debugging and performance awareness. Even outside graphics-focused jobs, this project demonstrates that I can learn a complex library, apply technical concepts, and build a complete working application with iterative improvements.
+CS 350 Portfolio Journal – Reflection (Module Eight)
+Artifacts Included
+Milestone Three: Expanded the Raspberry Pi circuit/software to support additional components and system behavior (buttons, display/output, and sensor integration work from the course).
+Final Project: Combined the hardware components and software logic into a complete working system that responds to inputs and changes state reliably.
+Summarize the project and what problem it was solving
+This course project focused on building interface software that controls hardware components using a Raspberry Pi. The goal was to take sensor/input data (like button presses and environmental readings) and display meaningful output while managing system behavior through states. Overall, the problem being solved was how to design a small embedded-style system that is reliable, responsive, and structured well enough to be maintained as features are added.
+What did you do particularly well?
+I did well at breaking the system into smaller parts and building it up over time. By working through the milestones, I was able to integrate hardware components step-by-step and reuse that work in the final project. I also improved at troubleshooting by isolating issues (wiring vs. code vs. logic) and confirming fixes through repeated tests.
+Where could you improve?
+If I were to improve this project, I would spend more time upfront on planning the state logic and documenting edge cases (like button bounce, timing issues, or unexpected sensor values). I would also add more automated testing where possible and improve comments/documentation to make the project easier for someone else to understand quickly.
+What tools and/or resources are you adding to your support network?
+From this course, I’m adding stronger habits around using official documentation and library references first (GPIO/library documentation), then validating solutions with small test changes instead of guessing. I’m also adding debugging strategies such as checking logs/outputs, testing one component at a time, and using version control to track changes when troubleshooting.
+What skills from this project will be particularly transferable to other projects and/or course work?
+The most transferable skills are designing state-based logic, integrating external libraries, debugging hardware/software interactions, and building systems incrementally. These skills apply to future work in embedded systems, IoT, automation, and software projects where reliability and input/output behavior matter.
+How did you make this project maintainable, readable, and adaptable?
+I focused on keeping the code organized by separating responsibilities (input handling, output/display behavior, and state logic). I used clear naming and consistent structure so it’s easier to trace what each part does. Building through milestones also made the project adaptable because each new feature was added on top of a stable base instead of rewriting everything at the end.
